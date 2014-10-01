@@ -7,12 +7,37 @@
 
 .header {}
 
-.sidebar {}
+.container {
+	/*width: 1024px;*/
+	/*margin: 0 auto;*/
+}
 
-.main-content {}
+.container:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
 
-.sub-content {}
 
-.footer {}
+.sidebar {
+	float: left;
+	height: 200px;
+}
 
-/* what do you have to add to make the sidebar and content and footer not be the full width of the browser? */
+.main-content {
+	float: right;
+	height: 200px;	
+}
+
+.sub-content {
+	float: right;
+	height: 200px;	
+}
+
+.footer {
+	clear: both;
+}
+
+/* what do you have to add to make the sidebar and content and footer not be the full width of the browser?  Answer- the container div */

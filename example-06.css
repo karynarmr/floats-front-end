@@ -5,23 +5,35 @@
 
 /* Example 06 */
 
+
+
 .container {
-	width: 1024px; /* what happens to the widget boxes when you change this width? */
+	width: 1024px; /* what happens to the widget boxes when you change this width? Answer: all the widgets scrunch together to fit the width*/
 	margin: 0 auto;
 }
 
 
 .main-content {}
-/* hint! what do you need to add here? */
+/* hint! what do you need to add here? Answer- the clearfix thingy*/
+
+.main-content:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
 
 .widget {
 	/* how do you make the widgets float next to each other? */
 	/* what happens when you change float left to float right? why? */
+	float: left;
 }
 
 
 .footer {
 	/* hint! */
+	clear: both;
 }
 
 

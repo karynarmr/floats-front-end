@@ -5,24 +5,75 @@
 
 /* Example 12 */
 
+.container:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
 /* To Do List */
-.todolist {}
+
+.todolist:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
 
 /* Individual Todo */
-.todo {}
+.todo {
+	width: 100px;
+}
 
 
 /* Priority icon dot */
-.icon {}
+.icon {
+	float: left;
+}
+
 
 /* Info of the todo, title and date */
-.todo-info {}
+.todo-info {
+	width: 500px;
+}
+
+
+.todo-info:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;	
+}
+
 
 /* Title */
-.todo-title {}
+.todo-title {
+	height: 50%;
+	float: left;
+	display: inline;
+}
+
 
 /* Date */
-.todo-date {}
+.todo-date {
+	float: right;
+	display: inline;
+}
+
 
 /* Checkboxes! */
-input[type=checkbox] {}
+input[type=checkbox] {
+}
+
+.check:after {
+	content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;	
+}
